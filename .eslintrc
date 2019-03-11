@@ -1,0 +1,57 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype"
+  ],
+  "plugins": ["flowtype", "import", "react"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "arrow-parens": [
+      "warn",
+      "as-needed",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "comma-dangle": ["error", "never"],
+    "max-len": [
+      "error",
+      { "code": 80, "ignoreStrings": true, "ignoreUrls": true }
+    ],
+    "no-return-assign": 0,
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "react/default-props-match-prop-types": [
+      "error",
+      {
+        "allowRequiredDefaults": true
+      }
+    ],
+    "react/destructuring-assignment": 0,
+    "react/prop-types": [1, { "skipUndeclared": true }],
+    "react/sort-comp": [
+      1,
+      {
+        "order": [
+          "type-annotations",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "render"
+        ]
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/require-default-props": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": true, "peerDependencies": true }
+    ],
+    "quotes": ["error", "single"]
+  }
+}

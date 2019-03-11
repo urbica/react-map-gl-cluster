@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/circleci/project/github/urbica/react-map-gl-cluster.svg?style=popout)](https://circleci.com/gh/urbica/react-map-gl-cluster)
 ![npm](https://img.shields.io/npm/dt/@urbica/react-map-gl-cluster.svg)
-![npm](https://img.shields.io/npm/v/@urbica/react-map-gl-cluster.svg?style=popout)
+![npm](https://img.shields.io/npm/v/@urbica/react-map-gl-cluster.svg)
 
 Cluster component for [Urbica React Components Library for Mapbox GL JS](https://github.com/urbica/react-map-gl).
 

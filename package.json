@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git://github.com/urbica/react-map-gl-cluster.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/react-map-gl-cluster.cjs.js",
   "module": "dist/react-map-gl-cluster.esm.js",
   "files": [

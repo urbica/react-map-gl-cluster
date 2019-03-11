@@ -43,6 +43,12 @@ const style = {
   textAlign: 'center'
 };
 
+const ClusterMarker = ({ longitude, latitude, pointCount }) => (
+  <Marker longitude={longitude} latitude={latitude}>
+    <div style={{ ...style, background: '#f28a25' }}>{pointCount}</div>
+  </Marker>
+);
+
 <MapGL
   style={{ width: '100%', height: '400px' }}
   mapStyle='mapbox://styles/mapbox/light-v9'
@@ -50,16 +56,7 @@ const style = {
   onViewportChange={viewport => setState({ viewport })}
   {...state.viewport}
 >
-  <Cluster
-    radius={40}
-    extent={512}
-    nodeSize={64}
-    component={({ longitude, latitude, pointCount }) => (
-      <Marker longitude={longitude} latitude={latitude}>
-        <div style={{ ...style, background: '#f28a25' }}>{pointCount}</div>
-      </Marker>
-    )}
-  >
+  <Cluster radius={40} extent={512} nodeSize={64} component={ClusterMarker}>
     {points.map(point => (
       <Marker
         key={point.id}

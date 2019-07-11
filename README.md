@@ -1,6 +1,6 @@
 # Urbica React Mapbox GL Cluster
 
-[![Build Status](https://img.shields.io/circleci/project/github/urbica/react-map-gl-cluster.svg?style=popout)](https://circleci.com/gh/urbica/react-map-gl-cluster) [![Greenkeeper badge](https://badges.greenkeeper.io/urbica/react-map-gl-cluster.svg)](https://greenkeeper.io/)
+[![Build Status](https://img.shields.io/circleci/project/github/urbica/react-map-gl-cluster.svg?style=popout)](https://circleci.com/gh/urbica/react-map-gl-cluster)
 ![npm](https://img.shields.io/npm/dt/@urbica/react-map-gl-cluster.svg)
 ![npm](https://img.shields.io/npm/v/@urbica/react-map-gl-cluster.svg)
 

@@ -31,6 +31,10 @@ export type ClusterComponentProps = {
   pointCountAbbreviated: string | number
 };
 
+export type ClusterMapFunction = (props: {}) => any;
+
+export type ClusterReduceFunction = (accumulated: {}, props: {}) => any;
+
 export type ClusterComponent = React$Component<ClusterComponentProps, any>;
 
 type Props = {
@@ -48,6 +52,15 @@ type Props = {
 
   /** Size of the KD-tree leaf node. Affects performance */
   nodeSize?: number,
+
+  /**
+   * A function that returns cluster properties
+   * corresponding to a single point.
+   *  */
+  map?: ClusterMapFunction,
+
+  /** A reduce function that merges properties of two clusters into one. */
+  reduce?: ClusterReduceFunction,
 
   /** React Component for rendering Cluster */
   component: Class<ClusterComponent>,
@@ -118,14 +131,25 @@ class Cluster extends PureComponent<Props, State> {
   }
 
   _createCluster = (props: Props) => {
-    const { minZoom, maxZoom, radius, extent, nodeSize, children } = props;
+    const {
+      minZoom,
+      maxZoom,
+      radius,
+      extent,
+      nodeSize,
+      children,
+      reduce,
+      map
+    } = props;
 
     const cluster = new Supercluster({
       minZoom,
       maxZoom,
       radius,
       extent,
-      nodeSize
+      nodeSize,
+      reduce,
+      map
     });
 
     const points = Children.map(children, child =>

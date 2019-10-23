@@ -33,7 +33,7 @@ export type ClusterComponentProps = {
 
 export type ClusterMapFunction = (props: {}) => any;
 
-export type ClusterReduceFunction = (accumulated: {}, props: {}) => any;
+export type ClusterReduceFunction = (accumulated: {}, props: {}) => void;
 
 export type ClusterComponent = React$Component<ClusterComponentProps, any>;
 

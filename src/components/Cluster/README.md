@@ -78,7 +78,8 @@ You can call `getCluster()` method on the `Cluster` [ref](https://reactjs.org/do
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { randomPoint } from '@turf/random';
-import MapGL, { Cluster, Marker } from '@urbica/react-map-gl';
+import MapGL, { Marker } from '@urbica/react-map-gl';
+import Cluster from '@urbica/react-map-gl-cluster';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const bbox = [-160, -70, 160, 70];

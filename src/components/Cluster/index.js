@@ -57,9 +57,11 @@ type Props = {
    * A function that returns cluster properties
    * corresponding to a single point.
    *  */
+  // eslint-disable-next-line react/no-unused-prop-types
   map?: ClusterMapFunction,
 
   /** A reduce function that merges properties of two clusters into one. */
+  // eslint-disable-next-line react/no-unused-prop-types
   reduce?: ClusterReduceFunction,
 
   /** React Component for rendering Cluster */

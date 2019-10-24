@@ -6,7 +6,11 @@
     "prettier",
     "prettier/flowtype"
   ],
-  "plugins": ["flowtype", "import", "react"],
+  "plugins": [
+    "flowtype",
+    "import",
+    "react"
+  ],
   "env": {
     "browser": true,
     "jest": true
@@ -19,13 +23,25 @@
         "requireForBlockBody": true
       }
     ],
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
     "max-len": [
       "error",
-      { "code": 80, "ignoreStrings": true, "ignoreUrls": true }
+      {
+        "code": 80,
+        "ignoreStrings": true,
+        "ignoreUrls": true
+      }
     ],
     "no-return-assign": 0,
-    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allowAfterThis": true
+      }
+    ],
     "react/default-props-match-prop-types": [
       "error",
       {
@@ -33,7 +49,12 @@
       }
     ],
     "react/destructuring-assignment": 0,
-    "react/prop-types": [1, { "skipUndeclared": true }],
+    "react/prop-types": [
+      1,
+      {
+        "skipUndeclared": true
+      }
+    ],
     "react/sort-comp": [
       1,
       {
@@ -46,12 +67,29 @@
         ]
       }
     ],
-    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
     "react/require-default-props": 0,
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": true, "peerDependencies": true }
+      {
+        "devDependencies": true,
+        "peerDependencies": true
+      }
     ],
-    "quotes": ["error", "single"]
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "react/static-property-placement": [
+      "error",
+      "static public field"
+    ]
   }
 }

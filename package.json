@@ -1,6 +1,6 @@
 {
   "name": "@urbica/react-map-gl-cluster",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React Cluster Component for Mapbox GL JS",
   "author": "Stepan Kuzmin <to.stepan.kuzmin@gmail.com> (stepankuzmin.com)",
   "license": "MIT",

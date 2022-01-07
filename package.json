@@ -17,6 +17,7 @@
     "dist"
   ],
   "scripts": {
+    "prepare": "npm run build",
     "start": "styleguidist server",
     "lint": "eslint src",
     "test": "jest test",
